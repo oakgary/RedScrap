@@ -74,11 +74,16 @@ function init() {
         console.error('config.json contains null values');
         process.exitCode = 1;
     } else {
-        config.subreddits.forEach(function (subreddit) {
-            url_storage.set(subreddit, []);
-            after_storage.set(subreddit, "");
-        });
-        loadSubreddits(config.subreddits);
+        if (config.subreddits.constructor === Array) {
+            config.subreddits.forEach(function (subreddit) {
+                url_storage.set(subreddit, []);
+                after_storage.set(subreddit, "");
+            });
+            loadSubreddits(config.subreddits);
+        } else {
+            console.error('config.subreddits has to be an array');
+            process.exitCode = 1;
+        }
     }
 }
 
