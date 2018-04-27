@@ -1,0 +1,28 @@
+{  
+   "name":"redditscrapper-webhook",
+   "description":"gathers image and video urls from subreddits and posts them to a webhook",
+   "main":"scrapper.js",
+   "repository":{  
+      "type":"git",
+      "url":"https://github.com/oakgary/redditscrapper-webhook.git"
+   },
+   "dependencies":{  
+      "request":"^2.85.0",
+      "node-fetch":"^2.1.2"
+   },
+   "keywords":[  
+      "reddit",
+      "scrapper",
+      "webhook",
+      "discord",
+      "bot",
+      "poster",
+      "subreddit"
+   ],
+   "author":"oakgary",
+   "license":"MIT",
+   "bugs":{  
+      "url":"https://github.com/oakgary/redditscrapper-webhook/issues"
+   },
+   "homepage":"https://github.com/oakgary/redditscrapper-webhook#readme"
+}
