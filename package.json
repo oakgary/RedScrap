@@ -1,16 +1,16 @@
-{  
-   "name":"redditscrapper-webhook",
-   "description":"gathers image and video urls from subreddits and posts them to a webhook",
-   "main":"scrapper.js",
-   "repository":{  
-      "type":"git",
-      "url":"https://github.com/oakgary/redditscrapper-webhook.git"
+{
+   "name": "redditscraper-webhook",
+   "description": "gathers image and video urls from subreddits and posts them to a webhook",
+   "main": "scrapper.js",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/oakgary/redditscrapper-webhook.git"
    },
-   "dependencies":{  
-      "request":"^2.85.0",
-      "node-fetch":"^2.1.2"
+   "dependencies": {
+      "request": "^2.85.0",
+      "node-fetch": "^2.1.2"
    },
-   "keywords":[  
+   "keywords": [
       "reddit",
       "scrapper",
       "webhook",
@@ -19,10 +19,10 @@
       "poster",
       "subreddit"
    ],
-   "author":"oakgary",
-   "license":"MIT",
-   "bugs":{  
-      "url":"https://github.com/oakgary/redditscrapper-webhook/issues"
+   "author": "oakgary",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/oakgary/redditscrapper-webhook/issues"
    },
-   "homepage":"https://github.com/oakgary/redditscrapper-webhook#readme"
+   "homepage": "https://github.com/oakgary/redditscrapper-webhook#readme"
 }

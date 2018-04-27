@@ -6,10 +6,6 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const redditUrl = 'https://www.reddit.com/r/';
 const url_storage = new Map();
 const after_storage = new Map();
-config.subreddits.forEach(function (subreddit) {
-    url_storage.set(subreddit, []);
-    after_storage.set(subreddit, "");
-});
 
 function postWebhook(jsonBody) {
     request({
@@ -78,6 +74,10 @@ function init() {
         console.error('config.json contains null values');
         process.exitCode = 1;
     } else {
+        config.subreddits.forEach(function (subreddit) {
+            url_storage.set(subreddit, []);
+            after_storage.set(subreddit, "");
+        });
         loadSubreddits(config.subreddits);
     }
 }

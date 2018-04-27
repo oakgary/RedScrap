@@ -1,1 +1,1 @@
-# redditscrapper-webhook
+# redditscraper-webhook
