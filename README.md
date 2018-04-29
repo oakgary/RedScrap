@@ -19,7 +19,7 @@ RedScrap can be set up in many different ways, here is an example for the use wi
 
 ### Configuration
 * config.json (sort and time are the configurations for the reddit posts)
-```json
+```
 {
 	"webhook": "your webhook url (e.g. for Discord: "https://discordapp.com/api/webhooks/XXX/XXX)"",
 	"sort": "hot, new, rising, controversial or top",
