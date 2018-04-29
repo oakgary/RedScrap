@@ -1,10 +1,10 @@
 {
-   "name": "redditscraper-webhook",
+   "name": "RedScrap",
    "description": "gathers image and video urls from subreddits and posts them to a webhook",
-   "main": "scrapper.js",
+   "main": "scraper.js",
    "repository": {
       "type": "git",
-      "url": "https://github.com/oakgary/redditscrapper-webhook.git"
+      "url": "https://github.com/oakgary/RedScrap.git"
    },
    "dependencies": {
       "request": "^2.85.0",
@@ -22,7 +22,7 @@
    "author": "oakgary",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/oakgary/redditscrapper-webhook/issues"
+      "url": "https://github.com/oakgary/RedScrap/issues"
    },
-   "homepage": "https://github.com/oakgary/redditscrapper-webhook#readme"
+   "homepage": "https://github.com/oakgary/RedScrap#readme"
 }
