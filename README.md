@@ -13,7 +13,7 @@ RedScrap can be set up in many different ways, here is an example for the use wi
 
 ### Preparation
 
-1. **[Download](https://github.com/oakgary/RedScrap/archive/master.zip) and extraxt RedScrap**
+1. **[Download](https://github.com/oakgary/RedScrap/archive/master.zip) and extract RedScrap**
 2. **`npm install`**
 3. **Replace scraper.js with [handler.js](https://gist.github.com/oakgary/47ed4e7635afcc27252cf350859ec3aa#file-handler-js) and create [serverless.yml](https://gist.github.com/oakgary/47ed4e7635afcc27252cf350859ec3aa#file-serverless-yml)**
 
@@ -26,14 +26,14 @@ RedScrap can be set up in many different ways, here is an example for the use wi
 	"time": "hour, day, week, month, year or all",
 	"items_per_page": "between 1 and 100",
 	"amount_of_pages": "basically a multiplicator for items_per_page",
-    "subreddits": "array of subreddits (e.g. ["funny","videos","gifs"]"
+        "subreddits": "array of subreddits (e.g. ["funny","videos","gifs"]"
 }
 ```
 * serverless.yml
 
 ```
-schedule indicates the time (in utc) of excecution in cron format; current setup is daily at 6pm utc)
-raise the timeout if you plan to post more than 75 urls with each excecution
+schedule indicates the time (in utc) of execution in cron format; current setup is daily at 6pm utc
+raise the timeout if you plan to post more than 75 urls with each execution
 ```
 
 ### Deployment
