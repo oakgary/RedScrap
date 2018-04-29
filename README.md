@@ -19,14 +19,14 @@ RedScrap can be set up in many different ways, here is an example for the use wi
 
 ### Configuration
 * config.json (sort and time are the configurations for the reddit posts)
-```
+```json
 {
 	"webhook": "your webhook url (e.g. for Discord: "https://discordapp.com/api/webhooks/XXX/XXX)"",
 	"sort": "hot, new, rising, controversial or top",
 	"time": "hour, day, week, month, year or all",
 	"items_per_page": "between 1 and 100",
 	"amount_of_pages": "basically a multiplicator for items_per_page",
-    "subreddits": "array of subreddits (e.g. ["funny","videos","gifs"]"
+        "subreddits": "array of subreddits (e.g. ["funny","videos","gifs"]"
 }
 ```
 * serverless.yml
