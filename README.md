@@ -1,6 +1,6 @@
 # RedScrap
 
-RedScrap gathers image and video urls from subreddits and posts them to a webhook. 
+RedScrap gathers image and video urls from subreddits and posts them to a webhook.  
 The urls that are to be gathered are configurable in reddits typical schema (e.g. Top of the day).
 
 ## Setup
@@ -33,13 +33,18 @@ RedScrap can be set up in many different ways, here is an example for the use wi
 
 ```
 schedule indicates the time (in utc) of execution in cron format; current setup is daily at 6pm utc
-raise the timeout if you plan to post more than 75 urls with each execution
+raise the timeout if you plan to post more than 100 urls with each execution
 ```
 
 ### Deployment
 
 1. **`serverless login`**
 2. **`serverless deploy`**
+
+## Limits
+* Discord-Webhook: If you plan to post more than 30 urls per execution make sure to raise the sleep
+ duration  
+(2s should be fine) in the scraper.js/handler.js's postUrl function in order not to trigger [Discords Rate-Limits](https://discordapp.com/developers/docs/topics/rate-limits).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -37,7 +37,7 @@ async function loadSubreddits(subreddits) {
 
 async function getJson(subreddit, sort, time, items_per_page, amount_of_pages) {
     let urls = url_storage.get(subreddit);
-    for (i = 0; i < amount_of_pages; i++) {
+    for (let i = 0; i < amount_of_pages; i++) {
         //Example URL: 'https://www.reddit.com/r/funny/top/.json?t=all&limit=100'
         const url = redditUrl + subreddit + '/' + sort + '/.json?t=' + time + '&limit=' + items_per_page + '&after=' + after_storage.get(subreddit);
         const response = await fetch(url);
@@ -50,14 +50,14 @@ async function getJson(subreddit, sort, time, items_per_page, amount_of_pages) {
 }
 
 function postUrls(urls) {
-    for (i = 0; i < urls.length; i++) {
+    for (let i = 0; i < urls.length; i++) {
         postUrl(urls[i], i);
     }
 }
 
 async function postUrl(url, i) {
     const jsonBody = { content: url };
-    await sleep(700 * i);
+    await sleep(500 * i);
     postWebhook(jsonBody);
 }
 
