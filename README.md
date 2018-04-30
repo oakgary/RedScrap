@@ -1,7 +1,7 @@
 # RedScrap
 
 RedScrap gathers image and video urls from subreddits and posts them to a webhook.  
-The urls that are to be gathered are configurable in reddits typical schema (e.g. Top of the day).
+The urls that are to be gathered are configurable in reddits typical schema (e.g. top of the day).
 
 ## Setup
 RedScrap can be set up in many different ways, here is an example for the use with AWS Lambda.
