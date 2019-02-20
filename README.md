@@ -18,7 +18,7 @@ The urls that are to be gathered are configurable in reddits typical schema (e.g
 	"sort": "hot, new, rising, controversial or top",
 	"time": "hour, day, week, month, year or all",
 	"itemsPerPage": "between 1 and 100",
-	"amountOfPages": "basically a multiplicator for items_per_page",
+	"amountOfPages": "basically a multiplicator for itemsPerPage",
         "subreddits": "array of subreddits (e.g. ["funny","videos","gifs"]"
 }
 ```
