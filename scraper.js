@@ -41,10 +41,10 @@ const getUrls = async (subreddit, sort, time, itemsPerPage, amountOfPages, after
 };
 
 const loadSubreddits = async (subreddits) => {
+  const {
+    sort, time, itemsPerPage, amountOfPages,
+  } = config;
   const arrOfarrOfUrls = await Promise.all(subreddits.map(async (subreddit) => {
-    const {
-      sort, time, itemsPerPage, amountOfPages,
-    } = config;
     const urls = await getUrls(subreddit, sort, time, itemsPerPage, amountOfPages, null, []);
     return urls;
   }));
