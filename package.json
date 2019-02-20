@@ -7,7 +7,6 @@
       "url": "https://github.com/oakgary/RedScrap.git"
    },
    "dependencies": {
-      "request": "^2.85.0",
       "node-fetch": "^2.1.2"
    },
    "keywords": [
