@@ -14,7 +14,7 @@ The urls that are to be gathered are configurable in reddits typical schema (e.g
 * config.json (sort and time are the configurations for the reddit posts)
 ```
 {
-	"webhook": "your webhook url (e.g. for Discord: "https://discordapp.com/api/webhooks/XXX/XXX)"",
+	"webhook": "your webhook url (e.g. for Discord: "https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token})"",
 	"sort": "hot, new, rising, controversial or top",
 	"time": "hour, day, week, month, year or all",
 	"items_per_page": "between 1 and 100",
