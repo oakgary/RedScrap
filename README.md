@@ -5,11 +5,6 @@ The urls that are to be gathered are configurable in reddits typical schema (e.g
 
 ## Setup
 
-### Requirements
-* AWS-Account ([Website](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html))
-
-* Serverless `npm install -g serverless` ([Website](https://serverless.com), [GitHub](https://github.com/serverless/serverless))  
-
 ### Preparation
 
 1. **[Download](https://github.com/oakgary/RedScrap/archive/master.zip) and extract RedScrap**
