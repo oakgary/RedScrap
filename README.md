@@ -25,7 +25,7 @@ The urls that are to be gathered are configurable in reddits typical schema (e.g
 
 ## Limits
 * Discord-Webhook: If you plan to post more than 30 urls per execution make sure to raise the sleep
- duration (2s should be fine) in the scraper.js postUrl function in order not to trigger [Discords Rate-Limits](https://discordapp.com/developers/docs/topics/rate-limits).
+ duration (2s should be fine) in the scraper.js postUrls function in order not to trigger [Discords Rate-Limits](https://discordapp.com/developers/docs/topics/rate-limits).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
