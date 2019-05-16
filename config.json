@@ -1,8 +1,9 @@
 {
-	"webhook": null,
-	"sort": null,
-	"time": null,
-	"itemsPerPage": null,
-	"amountOfPages": null,
-    "subreddits": null
+  "webhook": null,
+  "sort": null,
+  "time": null,
+  "itemsPerPage": null,
+  "amountOfPages": null,
+  "subreddits": null,
+  "interval": null
 }
